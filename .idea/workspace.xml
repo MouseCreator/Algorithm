@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c12c3a6b-5efd-4c0b-ae16-bbc4b757b726" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BoyerMoore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BoyerMooreTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ColorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="c12c3a6b-5efd-4c0b-ae16-bbc4b757b726" name="Changes" comment="Added Boyer-Moore algorithm.">
+      <change afterPath="$PROJECT_DIR$/src/AhoCorasick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AhoCorasickExtended.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AhoCorasickExtendedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AhoCorasickTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KMP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KMPTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TreeEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -64,7 +61,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.AhoCorasickExtendedTest.executeTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Algorithm3" />
@@ -72,31 +69,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoyerMooreTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AhoCorasickExtendedTest.executeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BoyerMooreTest" />
-      <option name="METHOD_NAME" value="testFind" />
+      <option name="MAIN_CLASS_NAME" value="AhoCorasickExtendedTest" />
+      <option name="METHOD_NAME" value="executeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoyerMooreTest.testShiftTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AhoCorasickTest.testTransitions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BoyerMooreTest" />
-      <option name="METHOD_NAME" value="testShiftTable" />
+      <option name="MAIN_CLASS_NAME" value="AhoCorasickTest" />
+      <option name="METHOD_NAME" value="testTransitions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoyerMooreTest.testSuffixTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KMPTest.testMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BoyerMooreTest" />
-      <option name="METHOD_NAME" value="testSuffixTable" />
+      <option name="MAIN_CLASS_NAME" value="KMPTest" />
+      <option name="METHOD_NAME" value="testMatch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KMPTest.testPrefix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KMPTest" />
+      <option name="METHOD_NAME" value="testPrefix" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,10 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AhoCorasickExtendedTest.executeTest" />
+        <item itemvalue="JUnit.AhoCorasickTest.testTransitions" />
+        <item itemvalue="JUnit.KMPTest.testMatch" />
+        <item itemvalue="JUnit.KMPTest.testPrefix" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.BoyerMooreTest.testFind" />
-        <item itemvalue="JUnit.BoyerMooreTest.testSuffixTable" />
-        <item itemvalue="JUnit.BoyerMooreTest.testShiftTable" />
       </list>
     </recent_temporary>
   </component>
@@ -120,6 +128,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669502628334</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added Boyer-Moore algorithm.">
+      <created>1669511610290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669511610290</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,5 +148,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Boyer-Moore algorithm." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Boyer-Moore algorithm." />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="current" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
