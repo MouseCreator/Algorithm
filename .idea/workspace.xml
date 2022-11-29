@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c12c3a6b-5efd-4c0b-ae16-bbc4b757b726" name="Changes" comment="Improved AhoCorasick algorithm">
+    <list default="true" id="c12c3a6b-5efd-4c0b-ae16-bbc4b757b726" name="Changes" comment="Added User Interface">
+      <change afterPath="$PROJECT_DIR$/src/ShiftAnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShiftAndTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AhoCorasickExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AhoCorasickExtended.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AhoCorasickExtendedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AhoCorasickExtendedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoyerMoore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoyerMoore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoyerMooreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoyerMooreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IntPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IntPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,52 +62,49 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KMPTest.testMatch">
-    <configuration name="AhoCorasickExtendedTest.executeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BoyerMooreTest.testFind">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Algorithm3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AhoCorasickExtendedTest.executeTestAbba" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AhoCorasickExtendedTest" />
-      <option name="METHOD_NAME" value="executeTest" />
+      <option name="METHOD_NAME" value="executeTestAbba" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AhoCorasickExtendedTest.executeTestAbra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoyerMooreTest.simpleExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AhoCorasickExtendedTest" />
-      <option name="METHOD_NAME" value="executeTestAbra" />
+      <option name="MAIN_CLASS_NAME" value="BoyerMooreTest" />
+      <option name="METHOD_NAME" value="simpleExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AhoCorasickTest.testTransitions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoyerMooreTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AhoCorasickTest" />
-      <option name="METHOD_NAME" value="testTransitions" />
+      <option name="MAIN_CLASS_NAME" value="BoyerMooreTest" />
+      <option name="METHOD_NAME" value="testFind" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KMPTest.testMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShiftAndTest.testComplexSequence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KMPTest" />
-      <option name="METHOD_NAME" value="testMatch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KMPTest.testPrefix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KMPTest" />
-      <option name="METHOD_NAME" value="testPrefix" />
+      <option name="MAIN_CLASS_NAME" value="ShiftAndTest" />
+      <option name="METHOD_NAME" value="testComplexSequence" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.KMPTest.testMatch" />
-        <item itemvalue="JUnit.AhoCorasickExtendedTest.executeTestAbra" />
-        <item itemvalue="JUnit.AhoCorasickExtendedTest.executeTest" />
-        <item itemvalue="JUnit.AhoCorasickTest.testTransitions" />
-        <item itemvalue="JUnit.KMPTest.testPrefix" />
+        <item itemvalue="JUnit.BoyerMooreTest.testFind" />
+        <item itemvalue="JUnit.BoyerMooreTest.simpleExample" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AhoCorasickExtendedTest.executeTestAbba" />
+        <item itemvalue="JUnit.ShiftAndTest.testComplexSequence" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669680851496</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed kmp bug">
+      <created>1669682371674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669682371674</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,9 +175,25 @@
     <MESSAGE value="Added Boyer-Moore algorithm." />
     <MESSAGE value="Added more algorithms" />
     <MESSAGE value="Improved AhoCorasick algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved AhoCorasick algorithm" />
+    <MESSAGE value="Fixed kmp bug" />
+    <MESSAGE value="Added User Interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added User Interface" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/UserInterface.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BoyerMoore.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="current" />

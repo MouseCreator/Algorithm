@@ -184,7 +184,7 @@ public class AhoCorasickExtended extends AhoCorasick{
 
     }
     private boolean compareNodes(TreeNode current, TreeNode exception) {
-        return (current.edges.containsAll(exception.edges));
+        return !(exception.edges.containsAll(current.edges));
     }
 
 }

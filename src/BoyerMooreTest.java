@@ -1,6 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -46,5 +45,13 @@ class BoyerMooreTest {
         BoyerMoore boyer = new BoyerMoore(sequence, pattern);
         boyer.execute();
         assertEquals(boyer.getResult(), 16);
+    }
+
+    @Test
+    void simpleExample() {
+        final String sequence = "ALLOBALOBALOALALALAB";
+        final String pattern = "ALALA";
+        BoyerMoore boyer = new BoyerMoore(sequence, pattern);
+        boyer.execute();
     }
 }

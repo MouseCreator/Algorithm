@@ -47,15 +47,19 @@ public class BoyerMoore extends Algorithm {
             String activeString = pattern;
             String suffix = activeString.substring(M-i);
             activeString = activeString.substring(0, M-1);
+            String reason;
             while(true) {
                 int last = activeString.lastIndexOf(suffix);
                 if (last == -1) {
                     int longestPrefix = longestPrefix();
                     if (longestPrefix == 0) {
                         suffixTable[i-1] = M;
+                        reason = "as the length of the pattern";
                     }
                     else  {
                         suffixTable[i-1] = M - longestPrefix;
+                        reason = "as " + M + " - " + longestPrefix + " = " + suffixTable[i-1] +
+                                " (distance between prefix and suffix)";
                     }
                     System.out.print(pattern.substring(0, M-i) + ColorCode.ANSI_YELLOW + pattern.substring(M-i) + ColorCode.ANSI_RESET);
                     break;
@@ -64,6 +68,7 @@ public class BoyerMoore extends Algorithm {
                     activeString = activeString.substring(0, last);
                 } else {
                     suffixTable[i-1] = M - i - last;
+                    reason = "as distance between two instances of the suffix";
                     for (int j = 0; j < M; j++) {
                         char c = pattern.charAt(j);
                         if (j >= last && j < last+i) {
@@ -79,7 +84,7 @@ public class BoyerMoore extends Algorithm {
                     break;
                 }
             }
-            System.out.println("\td = " + suffixTable[i-1]);
+            System.out.println("\td = " + suffixTable[i-1] + "\t" + reason);
         }
         return suffixTable;
     }
@@ -104,7 +109,8 @@ public class BoyerMoore extends Algorithm {
         }
         System.out.println("The longest prefix that equals to suffix is: " + prefix);
         System.out.println(ColorCode.ANSI_YELLOW + pattern.substring(0, prefix) + ColorCode.ANSI_RESET +
-                pattern.substring(prefix, M - prefix) + ColorCode.ANSI_YELLOW + pattern.substring(M-prefix) +
+                pattern.substring(prefix, Math.max(prefix, M - prefix))
+                + ColorCode.ANSI_BLUE + pattern.substring(M-prefix+1) +
                 ColorCode.ANSI_RESET);
     }
     public void setAlphabet(String alphabet) {
@@ -128,10 +134,13 @@ public class BoyerMoore extends Algorithm {
                 if (ch != pattern.charAt(j)) {
 
                     if (k == 0) {
-                        i += Math.max(shiftTable.get(ch) - k , 1);
+                        i += Math.max(shiftTable.get(ch) , 1);
+                    }
+                    else if (k > 0){
+                        i += Math.max(shiftTable.get(ch) - k, suffixTable[k-1]);
                     }
                     else {
-                        i += Math.max(shiftTable.get(ch) - k, suffixTable[j-1]);
+                        assert false;
                     }
                     success = false;
                     break;
