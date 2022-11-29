@@ -86,7 +86,7 @@ public class UserInterface {
                 The program will compute prefix-function and demonstrate the performance.
                Aho-Corasick:
                 PATTERN - some text.
-                The program will build tree and automata for the entered pattern.
+                The program will build automata for the entered pattern (as table).
                Aho-Corasick (Extended):
                 PATTERNS - patterns, separated with spaces or commas.
                 The program will build tree and automata for the patterns.
