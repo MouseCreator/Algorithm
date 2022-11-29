@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12c3a6b-5efd-4c0b-ae16-bbc4b757b726" name="Changes" comment="Added User Interface">
-      <change afterPath="$PROJECT_DIR$/src/ShiftAnd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ShiftAndTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AhoCorasickExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AhoCorasickExtended.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AhoCorasickExtendedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AhoCorasickExtendedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BoyerMoore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoyerMoore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BoyerMooreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoyerMooreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IntPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IntPair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BoyerMooreTest.testFind">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Algorithm3" />
@@ -112,9 +106,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BoyerMooreTest.testFind" />
-        <item itemvalue="JUnit.BoyerMooreTest.simpleExample" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BoyerMooreTest.simpleExample" />
+        <item itemvalue="JUnit.BoyerMooreTest.testFind" />
         <item itemvalue="JUnit.AhoCorasickExtendedTest.executeTestAbba" />
         <item itemvalue="JUnit.ShiftAndTest.testComplexSequence" />
       </list>
@@ -157,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669682371674</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added User Interface">
+      <created>1669723183103</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669723183103</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,7 +185,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UserInterface.java</url>
-          <line>85</line>
+          <line>99</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

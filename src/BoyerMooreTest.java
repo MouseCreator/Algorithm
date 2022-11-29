@@ -49,8 +49,8 @@ class BoyerMooreTest {
 
     @Test
     void simpleExample() {
-        final String sequence = "ALLOBALOBALOALALALAB";
-        final String pattern = "ALALA";
+        final String sequence = "ABBBBBCC";
+        final String pattern = "DE";
         BoyerMoore boyer = new BoyerMoore(sequence, pattern);
         boyer.execute();
     }

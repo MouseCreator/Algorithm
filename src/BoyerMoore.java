@@ -106,12 +106,13 @@ public class BoyerMoore extends Algorithm {
         if (prefix == 0) {
             System.out.println("The pattern does not contain prefix that equals to suffix. Therefore "
                     + ColorCode.ANSI_YELLOW + "d2 = M = " + M + ColorCode.ANSI_RESET);
+        } else {
+            System.out.println("The longest prefix that equals to suffix is: " + prefix);
+            System.out.println(ColorCode.ANSI_YELLOW + pattern.substring(0, prefix) + ColorCode.ANSI_RESET +
+                    pattern.substring(prefix, Math.max(prefix, M - prefix))
+                    + ColorCode.ANSI_BLUE + pattern.substring(M - prefix + 1) +
+                    ColorCode.ANSI_RESET);
         }
-        System.out.println("The longest prefix that equals to suffix is: " + prefix);
-        System.out.println(ColorCode.ANSI_YELLOW + pattern.substring(0, prefix) + ColorCode.ANSI_RESET +
-                pattern.substring(prefix, Math.max(prefix, M - prefix))
-                + ColorCode.ANSI_BLUE + pattern.substring(M-prefix+1) +
-                ColorCode.ANSI_RESET);
     }
     public void setAlphabet(String alphabet) {
         this.shiftTable = new HashMap<>();
