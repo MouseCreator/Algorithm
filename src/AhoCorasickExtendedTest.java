@@ -1,13 +1,17 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class AhoCorasickExtendedTest {
     @Test
     void executeTest() {
-        String patterns[] = new String[]{"he", "she", "his", "hers"};
-        AhoCorasickExtended a = new AhoCorasickExtended("", patterns);
+        String[] patterns = new String[]{"he", "she", "his", "hers"};
+        AhoCorasickExtended a = new AhoCorasickExtended("H", patterns);
         a.execute();
-        a.printAutomata();
+    }
+    @Test
+    void executeTestAbra() {
+        String[] patterns = new String[]{"abra", "bra", "abc", "bc"};
+        AhoCorasickExtended a = new AhoCorasickExtended("a", patterns);
+        a.execute();
     }
 }

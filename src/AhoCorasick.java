@@ -5,15 +5,14 @@ public class AhoCorasick extends Algorithm{
 
     public AhoCorasick(String sequence, String pattern) {
         super(sequence, pattern);
-        computeAlphabet();
-
     }
     @Override
     public void execute() {
+        computeAlphabet();
         computeTransitionFunction();
 
     }
-    private void computeAlphabet() {
+    protected void computeAlphabet() {
         alphabet = new ArrayList<>();
         for (char ch : sequence.toCharArray()) {
             if (!alphabet.contains(ch)) {
@@ -27,13 +26,13 @@ public class AhoCorasick extends Algorithm{
             }
         }
     }
-    private ArrayList<Character> alphabet;
+    protected ArrayList<Character> alphabet;
 
     public int[][] getTransitions() {
         return transitions;
     }
 
-    private int[][] transitions;
+    protected int[][] transitions;
 
     public void computeTransitionFunction() {
         transitions = new int[M+1][alphabet.size()];
