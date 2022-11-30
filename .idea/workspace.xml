@@ -6,11 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12c3a6b-5efd-4c0b-ae16-bbc4b757b726" name="Changes" comment="Edited help function">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Algorithm3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Algorithm3_jar/Algorithm3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="c12c3a6b-5efd-4c0b-ae16-bbc4b757b726" name="Changes" comment="Added jar w/o tests (Main class as main)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669725209888</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added jar w/o tests (Main class as main)">
+      <created>1669793627518</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669793627518</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,14 +207,15 @@
     <MESSAGE value="Added User Interface" />
     <MESSAGE value="Added help function. Fixed output error." />
     <MESSAGE value="Edited help function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited help function" />
+    <MESSAGE value="Added jar w/o tests (Main class as main)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jar w/o tests (Main class as main)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UserInterface.java</url>
-          <line>99</line>
+          <line>103</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

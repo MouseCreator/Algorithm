@@ -90,6 +90,10 @@ public class UserInterface {
                Aho-Corasick (Extended):
                 PATTERNS - patterns, separated with spaces or commas.
                 The program will build tree and automata for the patterns.
+                To draw this automata in your copybook, copy all vertexes/states ("0") and edges (--A-->),
+                Note that if edges are on the same level, they are incident to one vertex.
+                Draw additional edges as dotted lines. Additional edges, incident to 0-vertex may be considered
+                as implicit.
                Shift-And:
                 SEQUENCE - some text.
                 PATTERN - pattern that you need to find in the text.
