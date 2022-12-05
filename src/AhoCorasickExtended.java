@@ -152,39 +152,38 @@ public class AhoCorasickExtended extends AhoCorasick{
             if (current.hasEdgeTo(ch)) {
                 buildTransitions(appended, current.getTo(ch), haveWord+ch);
             }
-            else if (!haveWord.isEmpty()) {
+            else {
                 findOccurrences(current, appended, haveWord);
             }
         }
     }
     private void findOccurrences(TreeNode exception, ArrayList<IntPair> appended, String forWord) {
-        for (int i = 0; i < forWord.length(); i++) {
-            if (findOccurrenceForWord(exception, appended, forWord.substring(i)))
-                    break;
+       for (int i = 0; i < forWord.length(); i++) {
+           String longestSuffix = forWord.substring(i);
+           for (String pattern : patterns) {
+               if (!pattern.startsWith(longestSuffix)) {
+                   continue;
+               }
+               TreeNode toAdd = appendAutomata(root, longestSuffix);
+               if (toAdd != exception) {
+                   appendUnique(exception, toAdd, appended);
+                   return;
+               }
+           }
+       }
+    }
+    private void appendUnique(TreeNode from, TreeNode to, ArrayList<IntPair> appended) {
+        IntPair pair = new IntPair(from.num, to.num);
+        if (!appended.contains(pair)) {
+            appended.add(pair);
         }
     }
-    private boolean findOccurrenceForWord(TreeNode exception, ArrayList<IntPair> appended, String current) {
-        return findOccurrenceRecursive(root, exception, "", appended, current);
-    }
-    private boolean findOccurrenceRecursive(TreeNode current, TreeNode exception, String recursive,
-                                            ArrayList<IntPair> appended, String target) {
-        boolean result = false;
-        if (current != exception && compareNodes(current, exception) && target.endsWith(recursive)) {
-            IntPair pair = new IntPair(exception.getNum(), current.getNum());
-            if (!appended.contains(pair))
-                appended.add(pair);
-            result = true;
-        }
-        for (TreeEdge e : current.edges) {
-            if (findOccurrenceRecursive(e.getLeadsTo(), exception, recursive+e.getEdgeValue(), appended, target)) {
-                result = true;
-            }
-        }
-        return result;
-
-    }
-    private boolean compareNodes(TreeNode current, TreeNode exception) {
-        return !(exception.edges.containsAll(current.edges));
+    private TreeNode appendAutomata(TreeNode current, String prefix) {
+        if (prefix.isEmpty())
+            return current;
+        char moveTo = prefix.charAt(0);
+        assert current.hasEdgeTo(moveTo);
+        return appendAutomata(current.edgeTo(moveTo), prefix.substring(1));
     }
 
 }

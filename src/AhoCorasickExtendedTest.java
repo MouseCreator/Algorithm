@@ -20,4 +20,10 @@ class AhoCorasickExtendedTest {
         AhoCorasickExtended a = new AhoCorasickExtended("a", patterns);
         a.execute();
     }
+    @Test
+    void executeReal() {
+        String[] patterns = new String[]{"abc", "cb", "bca", "ca"};
+        AhoCorasickExtended a = new AhoCorasickExtended("a", patterns);
+        a.execute();
+    }
 }

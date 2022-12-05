@@ -4,18 +4,10 @@ import java.util.NoSuchElementException;
 public class TreeNode {
     private String word = "";
 
-    int num = -1;
+    int num;
     public TreeNode(int num) {
         this.num = num;
         edges = new ArrayList<>();
-    }
-    public TreeNode(int num, String word) {
-        this.num = num;
-        this.word = word;
-        edges = new ArrayList<>();
-    }
-    public boolean hasWord() {
-        return word.isEmpty();
     }
     public String getWord() {
         return word;
@@ -40,5 +32,14 @@ public class TreeNode {
 
     public int getNum() {
         return num;
+    }
+
+    public TreeNode edgeTo(char ch) {
+        for (TreeEdge e : edges) {
+            if (e.getEdgeValue() == ch) {
+                return e.getLeadsTo();
+            }
+        }
+        throw new NoSuchElementException();
     }
 }

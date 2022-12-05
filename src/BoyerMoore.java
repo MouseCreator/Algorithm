@@ -51,36 +51,13 @@ public class BoyerMoore extends Algorithm {
             while(true) {
                 int last = activeString.lastIndexOf(suffix);
                 if (last == -1) {
-                    int longestPrefix = longestPrefix();
-                    if (longestPrefix == 0) {
-                        suffixTable[i-1] = M;
-                        reason = "as the length of the pattern";
-                    }
-                    else  {
-                        suffixTable[i-1] = M - longestPrefix;
-                        reason = "as " + M + " - " + longestPrefix + " = " + suffixTable[i-1] +
-                                " (distance between prefix and suffix)";
-                    }
-                    System.out.print(pattern.substring(0, M-i) + ColorCode.ANSI_YELLOW + pattern.substring(M-i) + ColorCode.ANSI_RESET);
+                    reason = notFoundSuffix(i);
                     break;
                 }
                 if (last != 0 && pattern.charAt(M-i-1) == pattern.charAt(last-1)) {
                     activeString = activeString.substring(0, last);
                 } else {
-                    suffixTable[i-1] = M - i - last;
-                    reason = "as distance between two instances of the suffix";
-                    for (int j = 0; j < M; j++) {
-                        char c = pattern.charAt(j);
-                        if (j >= last && j < last+i) {
-                            System.out.print(ColorCode.ANSI_GREEN);
-                        } else if (j >= M - i){
-                            System.out.print(ColorCode.ANSI_BLUE);
-                        } else  {
-                            System.out.print(ColorCode.ANSI_RESET);
-                        }
-                        System.out.print(c);
-                    }
-                    System.out.print(ColorCode.ANSI_RESET);
+                    reason = foundSuffixAtPosition(i, last);
                     break;
                 }
             }
@@ -88,6 +65,47 @@ public class BoyerMoore extends Algorithm {
         }
         return suffixTable;
     }
+
+    private String foundSuffixAtPosition(int i, int last) {
+        String reason;
+        suffixTable[i -1] = M - i - last;
+        reason = "as distance between two instances of the suffix";
+        printColoredWord(i, last);
+        return reason;
+    }
+
+    private String notFoundSuffix(int i) {
+        String reason;
+        int longestPrefix = longestPrefix();
+        if (longestPrefix == 0) {
+            suffixTable[i -1] = M;
+            reason = "as the length of the pattern";
+        }
+        else  {
+            suffixTable[i -1] = M - longestPrefix;
+            reason = "as " + M + " - " + longestPrefix + " = " + suffixTable[i -1] +
+                    " (distance between prefix and suffix)";
+        }
+        System.out.print(pattern.substring(0, M- i) + ColorCode.ANSI_YELLOW + pattern.substring(M- i) +
+                ColorCode.ANSI_RESET);
+        return reason;
+    }
+
+    private void printColoredWord(int i, int last) {
+        for (int j = 0; j < M; j++) {
+            char c = pattern.charAt(j);
+            if (j >= last && j < last + i) {
+                System.out.print(ColorCode.ANSI_GREEN);
+            } else if (j >= M - i){
+                System.out.print(ColorCode.ANSI_BLUE);
+            } else  {
+                System.out.print(ColorCode.ANSI_RESET);
+            }
+            System.out.print(c);
+        }
+        System.out.print(ColorCode.ANSI_RESET);
+    }
+
     private int longestPrefix() {
         int i = 1;
         int result = 0;
