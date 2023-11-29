@@ -6,13 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12c3a6b-5efd-4c0b-ae16-bbc4b757b726" name="Changes" comment="Improved Aho-Corasick search">
+    <list default="true" id="c12c3a6b-5efd-4c0b-ae16-bbc4b757b726" name="Changes" comment="moved tests to test folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AhoCorasickExtendedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AhoCorasickExtendedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AhoCorasickTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AhoCorasickTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoyerMooreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BoyerMooreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/KMPTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShiftAndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ShiftAndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/AhoCorasickExtendedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AhoCorasickExtendedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/AhoCorasickTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AhoCorasickTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BoyerMooreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BoyerMooreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/KMPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/KMPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ShiftAndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ShiftAndTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669502628334</updated>
-      <workItem from="1701294329946" duration="121000" />
+      <workItem from="1701294329946" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="Added Boyer-Moore algorithm.">
       <created>1669511610290</created>
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669795386043</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="moved tests to test folder">
+      <created>1701294482361</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701294482361</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,18 +238,10 @@
     <MESSAGE value="Added jar w/o tests (Main class as main)" />
     <MESSAGE value="Extended instruction in help function." />
     <MESSAGE value="Improved Aho-Corasick search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved Aho-Corasick search" />
+    <MESSAGE value="moved tests to test folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved tests to test folder" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BoyerMoore.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="current" />

@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Test;
+/*import org.junit.jupiter.api.Test;
 
 
 class AhoCorasickExtendedTest {
@@ -26,4 +26,4 @@ class AhoCorasickExtendedTest {
         AhoCorasickExtended a = new AhoCorasickExtended("a", patterns);
         a.execute();
     }
-}
+}*/

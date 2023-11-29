@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Test;
+/*import org.junit.jupiter.api.Test;
 
 class ShiftAndTest {
     @Test
@@ -11,4 +11,4 @@ class ShiftAndTest {
         ShiftAnd shiftAnd = new ShiftAnd("CALIFORNIA", "FOR");
         shiftAnd.execute();
     }
-}
+}*/

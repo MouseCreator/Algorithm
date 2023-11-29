@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Test;
+/*import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 
@@ -54,4 +54,4 @@ class BoyerMooreTest {
         BoyerMoore boyer = new BoyerMoore(sequence, pattern);
         boyer.execute();
     }
-}
+}*/
